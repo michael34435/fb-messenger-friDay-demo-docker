@@ -8,5 +8,5 @@ RUN git clone https://github.com/michael34435/fb-messenger-friDay-demo.git
 WORKDIR "fb-messenger-friDay-demo"
 RUN npm i
 RUN npm i -g forever
-EXPOSE 443
+EXPOSE 3000
 CMD ["forever", "demo.js"]
