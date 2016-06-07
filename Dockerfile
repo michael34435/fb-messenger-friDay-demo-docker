@@ -8,6 +8,6 @@ RUN n latest
 RUN git clone https://github.com/michael34435/fb-messenger-friDay-demo.git
 WORKDIR "fb-messenger-friDay-demo"
 RUN npm i
-EXPOSE 3000
+EXPOSE 80
 RUN curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=${PAGE_ACCESS_TOKEN}"
 CMD ["node", "demo.js"]
