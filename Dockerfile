@@ -1,4 +1,4 @@
-FROM node
+FROM ubuntu
 MAINTAINER michael34435
 RUN apt-get install -y software-properties-common nodejs npm git wget
 RUN npm i n -g
